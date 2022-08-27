@@ -1,15 +1,15 @@
 import java.util.List;
 
 public class Banco {
-    public String Nome;
+    public String nome;
     public List<Conta> contas;
 
     public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		this.Nome = nome;
+		this.nome = nome;
 	}
 
 	public List<Conta> getContas() {
