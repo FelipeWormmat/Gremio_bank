@@ -1,3 +1,5 @@
+/*		Nomes: Felipe Wormmat, Fernando Pimmel, Fernando Reinaldo e Luan Adams		*/
+
 public class GremioBank {
 	public static void main(String[] args) {
 		/*	INSTANCIAS	*/
@@ -38,26 +40,26 @@ public class GremioBank {
 		System.out.println("============   DADOS DO BANCO   ===============");
 		System.out.println("===============================================");
 		System.out.printf("Banco: %s\n", banco.getNome());
-		System.out.printf("Agência: %s\n\n", banco.getAgencia());
+		System.out.printf("Agência: %s\n\n", agencia.getNumero());
 		
 		/*	PRINT DOS DADOS DO CLIENTE	*/
 		System.out.println("===============================================");
 		System.out.println("===========   DADOS DO CLIENTE   ==============");
 		System.out.println("===============================================");
 		System.out.printf("Nome: %s\n", cliente1.getNome());
-		System.out.printf("CPF: %s\n", cliente1.getCpf());
-		System.out.printf("Email: %s\n", cliente1.getEmail());
-		System.out.printf("Celular: %s\n", cliente1.getCelular());
-		System.out.printf("Endereço: %s\n\n", cliente1.getEndereco());
+		System.out.printf("CPF: %s\n", cpf1.getCpf());
+		System.out.printf("Email: %s\n", email1.getEmail());
+		System.out.printf("Celular: %s\n", celular1.getCelular());
+		System.out.printf("Endereço: %s, %s\n\n", endereco1.getCidade(), endereco1.getEstado());
 		
 		/*	PRINT DOS DADOS DA CONTA	*/
 		System.out.println("===============================================");
 		System.out.println("============   DADOS DA CONTA   ===============");
 		System.out.println("===============================================");
-		System.out.printf("Banco: %s\n", conta1.getBanco());
-		System.out.printf("Cliente: %s\n", conta1.getCliente());
-		System.out.printf("Pix: %s\n", conta1.getPix());
-		System.out.printf("Cartão: %s\n", conta1.getCartao());
-		System.out.printf("Saldo: %s\n\n", conta1.getSaldo());
+		System.out.printf("Banco: %s\n", banco.getNome());
+		System.out.printf("Cliente: %s\n", cliente1.getNome());
+		System.out.printf("Pix: %s\n", pix1.getChave());
+		System.out.printf("Cartão: %s\n", tipoCartao1.getFuncao());
+		System.out.printf("Saldo: R$ %s\n\n", saldo1.getSaldo());
 	} 
 }
