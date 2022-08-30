@@ -1,31 +1,51 @@
 public class Cliente {
     public String nome;
-	public String cpf;
-	public String email;
-	public String celular;
+	public Cpf cpf;
+	public Email email;
+	public Celular celular;
+	public Endereco endereco;
 	
+	public Cliente(String nome) {
+		this.nome = nome;
+	}
+
 	public String getNome() {
 		return nome;
 	}
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCpf() {
+	
+	public Cpf getCpf() {
 		return cpf;
 	}
-	public void setCpf(String cpf) {
+	
+	public void setCpf(Cpf cpf) {
 		this.cpf = cpf;
 	}
-	public String getEmail() {
+	
+	public Email getEmail() {
 		return email;
 	}
-	public void setEmail(String email) {
+	
+	public void setEmail(Email email) {
 		this.email = email;
 	}
-	public String getCelular() {
+	
+	public Celular getCelular() {
 		return celular;
 	}
-	public void setCelular(String celular) {
+	
+	public void setCelular(Celular celular) {
 		this.celular = celular;
 	}
+	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}	
 }

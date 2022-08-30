@@ -3,7 +3,14 @@ public class Cartao {
 	public String numero;
 	public String validade;
 	public int cvc;
+	public TipoCartao funcao;
 	
+	public Cartao(String nomeCartao, String numero, String validade, int cvc) {
+		this.nomeCartao = nomeCartao;
+		this.numero = numero;
+		this.validade = validade;
+		this.cvc = cvc;
+	}
 	public String getNomeCartao() {
 		return nomeCartao;
 	}
@@ -28,5 +35,10 @@ public class Cartao {
 	public void setCvc(int cvc) {
 		this.cvc = cvc;
 	}
-	
+	public TipoCartao getFuncao() {
+		return funcao;
+	}
+	public void setFuncao(TipoCartao funcao) {
+		this.funcao = funcao;
+	}
 }

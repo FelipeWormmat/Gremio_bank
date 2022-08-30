@@ -1,32 +1,61 @@
 public class Conta {
 	
 	public int numero;
-	public int agencia;
-	public double saldo;
+	public Banco banco;
 	public Cliente cliente;
+	public Pix pix;
+	public Cartao cartao;
+	public Saldo saldo;
 	
+	public Conta(int numero) {
+		this.numero = numero;
+	}
+
 	public int getNumero() {
 		return numero;
 	}
+
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-	public int getAgencia() {
-		return agencia;
+
+	public Banco getBanco() {
+		return banco;
 	}
-	public void setAgencia(int agencia) {
-		this.agencia = agencia;
+
+	public void setBanco(Banco banco) {
+		this.banco = banco;
 	}
-	public double getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
+
 	public Cliente getCliente() {
 		return cliente;
 	}
+
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+	}
+
+	public Pix getPix() {
+		return pix;
+	}
+
+	public void setPix(Pix pix) {
+		this.pix = pix;
+	}
+
+	public Cartao getCartao() {
+		return cartao;
+	}
+
+	public void setCartao(Cartao cartao) {
+		this.cartao = cartao;
+	}
+
+	public Saldo getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(Saldo saldo) {
+		this.saldo = saldo;
 	}
 }
