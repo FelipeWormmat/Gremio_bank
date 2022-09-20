@@ -38,26 +38,26 @@ public class GremioBank {
 		System.out.println("============   DADOS DO BANCO   ===============");
 		System.out.println("===============================================");
 		System.out.printf("Banco: %s\n", banco.getNome());
-		System.out.printf("Agência: %s\n\n", banco.getAgencia());
+		System.out.printf("Agência: %s\n\n", banco.getAgencia().getNumero());
 		
 		/*	PRINT DOS DADOS DO CLIENTE	*/
 		System.out.println("===============================================");
 		System.out.println("===========   DADOS DO CLIENTE   ==============");
 		System.out.println("===============================================");
 		System.out.printf("Nome: %s\n", cliente1.getNome());
-		System.out.printf("CPF: %s\n", cliente1.getCpf());
-		System.out.printf("Email: %s\n", cliente1.getEmail());
-		System.out.printf("Celular: %s\n", cliente1.getCelular());
-		System.out.printf("Endereço: %s\n\n", cliente1.getEndereco());
+		System.out.printf("CPF: %s\n", cliente1.getCpf().getCpf());
+		System.out.printf("Email: %s\n", cliente1.getEmail().getEmail());
+		System.out.printf("Celular: %s\n", cliente1.getCelular().getCelular());
+		System.out.printf("Endereço: %s, %s\n\n", cliente1.getEndereco().getCidade(), cliente1.getEndereco().getEstado());
 		
 		/*	PRINT DOS DADOS DA CONTA	*/
 		System.out.println("===============================================");
 		System.out.println("============   DADOS DA CONTA   ===============");
 		System.out.println("===============================================");
-		System.out.printf("Banco: %s\n", conta1.getBanco());
-		System.out.printf("Cliente: %s\n", conta1.getCliente());
-		System.out.printf("Pix: %s\n", conta1.getPix());
-		System.out.printf("Cartão: %s\n", conta1.getCartao());
-		System.out.printf("Saldo: %s\n\n", conta1.getSaldo());
+		System.out.printf("Banco: %s\n", conta1.getBanco().getNome());
+		System.out.printf("Cliente: %s\n", conta1.getCliente().getNome());
+		System.out.printf("Pix: %s\n", conta1.getPix().getChave());
+		System.out.printf("Cartão: %s\n", conta1.getCartao().getFuncao().getFuncao());
+		System.out.printf("Saldo: %s\n\n", conta1.getSaldo().getSaldo());
 	} 
 }
