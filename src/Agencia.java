@@ -1,17 +1,17 @@
 
 public class Agencia {
-	public int numero;
+	public String numero;
 	public Endereco endereco;
 	
-	public Agencia(int numero) {
+	public Agencia(String numero) {
 		this.numero = numero;
 	}
 	
-	public int getNumero() {
+	public String getNumero() {
 		return numero;
 	}
 	
-	public void setNumero(int numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 	
