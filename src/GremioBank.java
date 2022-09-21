@@ -1,4 +1,3 @@
-/*		Nomes: Felipe Wormmat, Fernando Pimmel, Fernando Reinaldo e Luan Adams		*/
 import javax.swing.JOptionPane;
 
 public class GremioBank {
@@ -26,7 +25,6 @@ public class GremioBank {
 			String estado = null;
 			String pix = null;
 			
-			int optionSelected = 0;
 			Cliente cliente1 = new Cliente(null);
 			Conta conta1 = new Conta(1);
 			
@@ -34,7 +32,7 @@ public class GremioBank {
 			nome = JOptionPane.showInputDialog(null, "Digite seu nome: ", titulo, -1);
 			cliente1.setNome(nome);
 			
-			cpf = JOptionPane.showInputDialog(null, "Digite seu CPF: ", titulo, -1);
+			cpf = JOptionPane.showInputDialog(null, "Informe seu CPF: ", titulo, -1);
 			Cpf cpf1 = new Cpf(cpf);
 			cliente1.setCpf(cpf1);
 			
@@ -46,8 +44,8 @@ public class GremioBank {
 			Celular celular1 = new Celular(celular);
 			cliente1.setCelular(celular1);
 			
-			cidade = JOptionPane.showInputDialog(null, "Digite sua cidade: ", titulo, -1);
-			estado = JOptionPane.showInputDialog(null, "Digite seu estado: ", titulo, -1);
+			cidade = JOptionPane.showInputDialog(null, "Informe sua cidade: ", titulo, -1);
+			estado = JOptionPane.showInputDialog(null, "Informe seu estado: ", titulo, -1);
 			Endereco endereco1 = new Endereco(cidade, estado);
 			cliente1.setEndereco(endereco1);
 			
@@ -86,7 +84,7 @@ public class GremioBank {
 			Pix pix1 = new Pix(pix);
 			conta1.setPix(pix1);
 			
-			String contaCliente = String.format("\t\tMinha conta: \nBanco: %s \nPIX: %s \n", conta1.getBanco().getNome(), conta1.getPix().getChave());
+			String contaCliente = String.format("\t\tMinha conta: \nSaldo: R$ 0,00 \n\nBanco: %s \nAgência: %s \nChave PIX: %s \n", conta1.getBanco().getNome(), conta1.getBanco().getAgencia().getNumero(), conta1.getPix().getChave());
 			JOptionPane.showMessageDialog(null, contaCliente, titulo, 1);
 		}
 		
@@ -150,7 +148,5 @@ public class GremioBank {
 		System.out.printf("Cartão: %s\n", conta1.getCartao().getFuncao().getFuncao());
 		System.out.printf("Saldo: %s\n\n", conta1.getSaldo().getSaldo());
 		*/
-		
-		
 	} 
 }
