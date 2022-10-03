@@ -1,3 +1,5 @@
+package model;
+
 public class Banco {
     public String nome;
     public Agencia agencia;

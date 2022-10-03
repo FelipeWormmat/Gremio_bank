@@ -1,3 +1,5 @@
+package model;
+
 public class Cartao {
 	public String nomeCartao;
 	public String numero;

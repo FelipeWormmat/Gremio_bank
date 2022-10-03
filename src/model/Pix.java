@@ -1,3 +1,5 @@
+package model;
+
 public class Pix {
     public String chave;
 

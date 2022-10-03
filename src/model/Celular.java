@@ -1,3 +1,4 @@
+package model;
 
 public class Celular {
 	public String celular;
