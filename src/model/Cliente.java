@@ -2,10 +2,15 @@ package model;
 
 public class Cliente {
     public String nome;
-	public Cpf cpf;
+	public Conta conta;
+    public Cpf cpf;
 	public Email email;
 	public Celular celular;
 	public Endereco endereco;
+	
+	public Cliente() {
+		
+	}
 	
 	public Cliente(String nome) {
 		this.nome = nome;
@@ -17,6 +22,14 @@ public class Cliente {
 	
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	public Conta getConta(Conta conta) {
+		return conta;
+	}
+	
+	public void setConta(Conta conta) {
+		this.conta = conta;
 	}
 	
 	public Cpf getCpf() {

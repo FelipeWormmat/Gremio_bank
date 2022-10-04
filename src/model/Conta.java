@@ -4,10 +4,13 @@ public class Conta {
 	
 	public int numero;
 	public Banco banco;
-	public Cliente cliente;
 	public Pix pix;
 	public Cartao cartao;
 	public Saldo saldo;
+	
+	public Conta() {
+		
+	}
 	
 	public Conta(int numero) {
 		this.numero = numero;
@@ -27,14 +30,6 @@ public class Conta {
 
 	public void setBanco(Banco banco) {
 		this.banco = banco;
-	}
-
-	public Cliente getCliente() {
-		return cliente;
-	}
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
 	}
 
 	public Pix getPix() {

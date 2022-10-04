@@ -1,10 +1,14 @@
 package controller;
 
 import view.GremioBankView;
+import model.Cliente;
 
 public class GremioBankController {
 	
 	GremioBankView gremioBankView = new GremioBankView();
+	ContaController contaController = new ContaController();
+	ClienteController clienteController = new ClienteController();
+	BancoController bancoController = new BancoController();	
 	
 	public void GremioBankPrincipal() {
 		int op = 0;
@@ -12,28 +16,49 @@ public class GremioBankController {
 		while(op != 3) {
 			op = gremioBankView.mostraInicio();
 			switch(op) {
-				case 0:
-					fazerLoginMenu();
-					break;
 				case 1:
-					criarContaMenu();
+					contaMenu();
+					break;
+				case 2:
+					bancoMenu();
 					break;
 			}
 		}
 	}
 	
-	public void fazerLoginMenu() {
+	public void contaMenu() {
+		int op = 0;
 		
+		while(op != 3) {
+			op = gremioBankView.contaMenu();
+			switch(op) {
+				case 1:
+					criaConta();
+					break;
+				case 2:
+					acessaConta();
+					break;
+			}
+		}
 	}
 	
-	public void criarContaMenu() {
-		
+	public void bancoMenu() {
+		bancoController.bancoClientes();
 	}
 	
 	private void criaConta() {
+		Cliente cliente = new Cliente();
+		
+		clienteController.clienteView.cadastraCliente(cliente);
+		contaController.criarConta();
+		
+		clienteController.adicionaCliente(cliente);
 		
 	}
 	
+	private void acessaConta() {
+		
+	}
 	
 }
 	
