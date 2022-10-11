@@ -7,8 +7,8 @@ import model.Conta;
 import view.ClienteView;
 
 public class ClienteController {
-	ArrayList<Cliente> listaCliente = new ArrayList<Cliente>();
-	ClienteView clienteView = new ClienteView();
+	public ArrayList<Cliente> listaCliente = new ArrayList<Cliente>();
+	public ClienteView clienteView = new ClienteView();
 	
 	public void adicionaCliente(Cliente cliente) {
 		if (listaCliente.size() < 10) {

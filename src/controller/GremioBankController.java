@@ -35,9 +35,6 @@ public class GremioBankController {
 				case 1:
 					criaConta();
 					break;
-				case 2:
-					acessaConta();
-					break;
 			}
 		}
 	}
@@ -46,17 +43,13 @@ public class GremioBankController {
 		bancoController.bancoClientes();
 	}
 	
-	private void criaConta() {
+	public void criaConta() {
 		Cliente cliente = new Cliente();
 		
 		clienteController.clienteView.cadastraCliente(cliente);
-		contaController.criarConta();
-		
 		clienteController.adicionaCliente(cliente);
 		
-	}
-	
-	private void acessaConta() {
+		contaController.criarConta();
 		
 	}
 	

@@ -11,7 +11,7 @@ public class ContaController {
 		
 	public void criarConta() {
 		Conta conta = new Conta();
-		adicionaConta(conta);
+		listaContas.add(conta);
 	}
 	
 	public void adicionaConta(Conta conta) {
