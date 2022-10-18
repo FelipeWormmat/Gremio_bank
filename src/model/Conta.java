@@ -55,4 +55,16 @@ public class Conta {
 	public void setSaldo(Saldo saldo) {
 		this.saldo = saldo;
 	}
+
+	public String gerarNumerodaConta() {
+        int n = 9;
+
+        int num[] = new int[9];
+
+        for (int i = 0; i < 9; i++) {
+            num[i] = randomNumber(n);
+        }
+
+        return this.numero = "" + num[0] + num[1] + num[2] + num[3] + num[4] + num[5] + num[6] + num[7] + '-' + num[8];
+    }
 }
